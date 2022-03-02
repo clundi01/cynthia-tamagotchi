@@ -1,6 +1,7 @@
 body {
     background: rgb(196, 148, 196);
     text-align: center;
+    
 }
 button {
     border: none;
@@ -8,6 +9,6 @@ button {
     padding: 14px 28px;
     font-size: 16px;
     cursor: pointer;
-    display: inline-block;
+    display: inline-table;
 
 }

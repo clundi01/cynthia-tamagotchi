@@ -1,7 +1,8 @@
 Started in my HTML file and started with the heading tag. (h1, h3)
 Center those two in CSS with text-align under body.
 Found a dog image and made it into a class under div.
-// Had an issue adding the pic and it was because I wrote scr instead of src
+// Had an issue adding the pic and it was because I wrote scr instead of src.
+I was able to center a div element
 
 Start with one button
 
