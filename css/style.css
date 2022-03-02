@@ -2,3 +2,12 @@ body {
     background: rgb(196, 148, 196);
     text-align: center;
 }
+button {
+    border: none;
+    background-color:rgb(114, 116, 204);
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    display: inline-block;
+
+}
