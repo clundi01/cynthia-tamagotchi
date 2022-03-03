@@ -1,9 +1,34 @@
-setInterval(myTimer, 10000);
+// let intervalFunc = setInterval(function(){
+//     counting++;
+//     console.log(counting);
+//      }, 1000);
 
-function myTimer() {
-  const myCount = new Count();
-document.getElementById("counting").innerHTML = count.toLocaleTimeString();
-}
+const dogOffEl = document.getElementById("btn-Dog off");
+const countEl = document.getElementById("counting");
+
+let count = 0;
+let myCount = null;
+// console.log("stop");
+function dogOff() {
+    myCount = setInterval(function(){
+      count++;
+      countEl.innerText = "Count: " + count;
+    }, 10000);
+  };
+
+dogOffEl.addEventListener('click', dogOff);
+
+
+
+
+
+
+// setInterval(myTimer, 1000);
+
+// function myTimer() {
+//   const myCount = new Count();
+// document.getElementById("counting").innerHTML = count.toLocaleTimeString();
+// }
 
 
 
@@ -29,4 +54,3 @@ document.getElementById("counting").innerHTML = count.toLocaleTimeString();
 
 
 // myButton.addEventListener('click', addOne);
-
