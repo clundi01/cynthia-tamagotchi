@@ -12,9 +12,27 @@
 <body>
     <!-- <button id="my-button">Add 1</button>
     <div id="my-count">0</div> -->
+    <button onclick="myFunction()">Click Me 1st!</button>
 
-    <h1>Tamagotchi Powers</h1>
-    <h3>Come Take Care of Me!</h3>
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  let text;
+  let person = prompt("Please enter your name:", "Type Name Here");
+  if (person == null || person == "") {
+    text = "User cancelled the prompt.";
+  } else {
+    text = "Hello " + person + "! Are you ready to care for me?";
+  }
+  document.getElementById("demo").innerHTML = text;
+} 
+</script>
+
+<h1>Tamagotchi Powers</h1>
+<h3>Come Take Care of Me!</h3>
+
+    
     <div class = puppy></div>
     <img src = "dog-11430.png" alt = "">
     <div style = "text-align: center;"></div>
