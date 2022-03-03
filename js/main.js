@@ -1,3 +1,15 @@
+setInterval(myTimer, 10000);
+
+function myTimer() {
+  const myCount = new Count();
+document.getElementById("counting").innerHTML = count.toLocaleTimeString();
+}
+
+
+
+
+
+
 // //console.log("Is this connected");
 
 // const myButton = document.getElementById ("my-button");
