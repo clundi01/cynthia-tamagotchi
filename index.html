@@ -11,25 +11,24 @@
 </head>
 <body>
     
-    <button onclick="myFunction()">Click Me 1st!</button>
-
+    <button id = "clicker" onclick="myFunction()">Name Me</button>
 <p id="demo"></p>
 
 <script>
 function myFunction() {
   let text;
-  let person = prompt("Please enter your name:", "Type Name Here");
+  let person = prompt("Please enter your puupy's name:", "Type Name Here");
   if (person == null || person == "") {
     text = "User cancelled the prompt.";
   } else {
-    text = "Hello " + person + "! Are you ready to care for me?";
+    text = "Hi, my name is " + person + "! Are you ready to care for me?";
   }
   document.getElementById("demo").innerHTML = text;
 } 
 </script>
 
 <h1>Tamagotchi Powers</h1>
-<h3>Come Take Care of Me!</h3>
+<h3>Pet Me and Tell Me I am Pretty!</h3>
 
     
     <div class = puppy></div>
@@ -40,9 +39,9 @@ function myFunction() {
         <p id = "counting">Count: 0</p>
     </div>
 
-    <button id="btn-Dog Off">Dog Off</button>
-    <button id="btn-Paw Pause">Paw Pause</button>
-    <button id="btn-Stare Stop">Stare Stop</button>
+    <button id="btn-Feed">Feed</button>
+    <button id="btn-Sleep">Sleep</button>
+    <button id="btn-Play">Play</button>
 
 
     

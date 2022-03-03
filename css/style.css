@@ -1,11 +1,29 @@
 body {
     background: rgb(196, 148, 196);
     text-align: center;
+
     
 }
-button {
+
+h1 { font-size: 50px;
+    font-family: Cursive;
+    color: rgb(87, 30, 30);
+    text-decoration: underline;
+    text-decoration-color: rgb(87, 30, 30);
+   
+
+}
+
+h3{ font-size: 25px;
+    font-family: Cursive;
+    color: rgb(87, 30, 30);
+    text-decoration: underline;
+    text-decoration-color: rgb(87, 30, 30);
+
+}
+#clicker {
     border: none;
-    background-color:rgb(114, 116, 204);
+    background-color:rgb(73, 77, 172);
     padding: 14px 28px;
     font-size: 16px;
     cursor: pointer;
@@ -17,4 +35,43 @@ img {
     width: 20%;
     height: auto;
 
+}
+
+ #btn-Feed {
+    color: rgb(87, 30, 30);
+    border: none;
+    background-color:rgb(73, 77, 172);
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    display: inline-table;
+    font-family: cursive;
+    
+ }
+
+ #btn-Sleep {
+    color: rgb(87, 30, 30);
+    border: none;
+    background-color:rgb(73, 77, 172);
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    display: inline-table;
+    font-family: cursive;
+ }
+
+ #btn-Play {
+    color: rgb(87, 30, 30);
+    border: none;
+    background-color:rgb(73, 77, 172);
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    display: inline-table;
+    font-family: cursive;
+
+ }
+
+#count {
+    font-family: cursive;
 }
