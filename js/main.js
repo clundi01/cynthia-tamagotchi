@@ -24,4 +24,25 @@ function deathCheck() {
     newGame();
   }
   }
+
+  function Reset() {
   
+    if (Math.random() > 0.4) {
+      hunger = hunger - 10;
+      deathCheck();
+        $("#food").html(hunger);
+    }
+      
+    if (Math.random() > 0.3) {
+      thirst = thirst - 15;
+      deathCheck();
+      $("#sleep").html(fatigue);
+    }
+      
+      if (Math.random() > 0.5) {
+        fatigue = fatigue + 10;
+        deathCheck();
+        $("#play").html(bordem);
+      }
+      
+    } 
