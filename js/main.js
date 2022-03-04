@@ -1,26 +1,26 @@
-let feed = 100;
-let sleep = 100;
-let play = 0;
+let Hunger = 100;
+let Fatigue = 100;
+let Boredom = 0;
 
 function newGame() {
-feed = 100;
-sleep = 100;
-play = 0;
+Hunger = 100;
+Fatigue = 100;
+Bordem = 0;
 }
 
 function deathCheck() {
-  if (feed > 100) {
+  if (Hunger > 100) {
     alert("Your pet has died of hunger!");
     newGame();
   }
   
-  if (sleep < 0) {
+  if (Fatigue < 0) {
     alert("Your pet has died of fatigue!");
     newGame();
   }
   
-  if (play < 0) {
-    alert("Your pet has died of bordem!");
+  if (Boredom < 0) {
+    alert("Your pet has died of boredem!");
     newGame();
   }
   }
@@ -28,21 +28,39 @@ function deathCheck() {
   function Reset() {
   
     if (Math.random() > 0.4) {
-      hunger = hunger - 10;
+      Hunger = Hunger - 10;
       deathCheck();
-        $("#food").html(hunger);
+        $("#Food").html(hunger);
     }
       
     if (Math.random() > 0.3) {
-      thirst = thirst - 15;
+      Fatigue = Fatigue - 15;
       deathCheck();
-      $("#sleep").html(fatigue);
+      $("#Sleep").html(fatigue);
     }
       
       if (Math.random() > 0.5) {
-        fatigue = fatigue + 10;
+        Boredom = Boredom + 10;
         deathCheck();
-        $("#play").html(bordem);
+        $("#Play").html(Boredom);
       }
       
     } 
+
+    function feed() {
+      Hunger = Hunger + 50;
+      $("#food").html(Hunger);
+      Reset();
+    }
+    
+    function Sleep() {
+     Fatigue = Fatigue + 40;
+     $("#sleep").html(Fatigue);
+      Reset();
+    }
+    
+    function Play() {
+      Boredom = Boredom - 30;
+      $("#play").html(Boredom);
+      Reset();
+    }

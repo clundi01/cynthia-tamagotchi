@@ -36,18 +36,21 @@ function myFunction() {
     <div style = "text-align: center;"></div>
 
   </br>
-  <p>Feed: <div id="Feed">100</div></p>
-  <p>Sleep: <div id="Sleep">100</div></p>
-  <p>Play: <div id="Play">0</div></p>
+  <p>Hunger: <div id="food">100</div></p>
+  <p>Fatigue: <div id="sleep">100</div></p>
+  <p>Boredom: <div id="play">0</div></p>
       </br>
 
     <div id="count">
         <p id = "counting">Count: 0</p>
     </div>
 
-    <button id="btn-Feed">Feed</button>
-    <button id="btn-Sleep">Sleep</button>
-    <button id="btn-Play">Play</button>
+ 
+    </br>
+<button class="action" onclick="feed()">Feed</button>
+<button class="action" onclick="sleep()">Sleep</button>
+<button class="action" onclick="boredom()">Play</button>
+</br>
 <p>
   <button id="Reset">Reset</button>
 </p>
