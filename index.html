@@ -19,7 +19,7 @@ function myFunction() {
   let text;
   let person = prompt("Please enter your puupy's name:", "Type Name Here");
   if (person == null || person == "") {
-    text = "User cancelled the prompt.";
+    text = "Why you don't want to name me :().";
   } else {
     text = "Hi, my name is " + person + "! Are you ready to care for me?";
   }
@@ -35,24 +35,15 @@ function myFunction() {
     <img src = "animated.gif" alt = "">
     <div style = "text-align: center;"></div>
 
-  </br>
-  <p>Hunger: <div id="food">100</div></p>
-  <p>Fatigue: <div id="sleep">100</div></p>
-  <p>Boredom: <div id="play">0</div></p>
-      </br>
-
-    <div id="count">
-        <p id = "counting">Count: 0</p>
-    </div>
-
+    <p id="feed">Hungry: 0</p>
+    <p id="sleep">Rest: 0</p>
+    <p id="play">Bone: 0</p>
+    
+    <button id="btn-feed">Feed</button>
+    <button id="btn-sleep">Sleep</button>
+    <button id="btn-play">Play</button>
+    <button id="btn-reset">Reset</button>
  
-    </br>
-<button class="action" onclick="feed()">Feed</button>
-<button class="action" onclick="sleep()">Sleep</button>
-<button class="action" onclick="boredom()">Play</button>
-</br>
-<p>
-  <button id="Reset">Reset</button>
 </p>
 
     

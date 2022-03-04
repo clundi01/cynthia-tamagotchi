@@ -13,6 +13,8 @@ now adding a prompt box. A prompt box is often used if you want the user to inpu
 When a prompt box pops up, the user will have to click either "OK" or "Cancel" to proceed after entering an input value.
 If the user clicks "OK" the box returns the input value. If the user clicks "Cancel" the box returns null.
 Having trouble invoking this function
+
+Did my w/Miro
 Start with one button
 
 An element on the page that dispalys 0
