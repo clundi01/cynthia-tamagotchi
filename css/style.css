@@ -38,7 +38,7 @@ img {
 }
 
 
-.action {
+#feed {
     color: rgb(87, 30, 30);
     border: none;
     background-color:rgb(73, 77, 172);
@@ -50,7 +50,7 @@ img {
     
  }
 
-.action {
+#sleep {
     color: rgb(87, 30, 30);
     border: none;
     background-color:rgb(73, 77, 172);
@@ -61,7 +61,7 @@ img {
     font-family: cursive;
  }
 
-.action {
+#play {
     color: rgb(87, 30, 30);
     border: none;
     background-color:rgb(73, 77, 172);
