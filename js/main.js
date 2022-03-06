@@ -2,6 +2,8 @@ let agePet = 0;
 let hunger = 0;
 let bore = 0;
 let sleep = 0;
+
+
 // window.onload = function main() {
 //     ageCount();
 //     hungerCount();
@@ -10,10 +12,12 @@ let sleep = 0;
 // }
 // added each variable for the set interval function so we can stop the timer
 // according to the condition we set
+
 let ageCounter = null;
 let hungerCounter = null;
 let boreCounter = null;
 let sleepCounter = null;
+
 // accessing the DOM elements of html
 const feedEl = document.getElementById('btn-feed');
 const sleepEl = document.getElementById('btn-sleep');
@@ -25,6 +29,7 @@ const rest = document.getElementById('sleep')
 const bone = document.getElementById('play')
 const petAlive = document.getElementById('alive')
 const startEl = document.getElementById('btn-start')
+
 // function to increment the age
 function ageCount() {
     ageCounter = setInterval(function () {
@@ -131,6 +136,7 @@ function resetClick() {
   clearInterval(boreCounter);
   clearInterval(sleepCounter);
 }
+
 // adding onclick function to each elements
 feedEl.addEventListener("click", feedClick);
 sleepEl.addEventListener("click", sleepClick);
