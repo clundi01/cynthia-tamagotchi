@@ -48,30 +48,61 @@ resetEl.addEventListener('click', resetClick);
 //   console.log("sleep button clicked!");
 // }
 
-function feedClick() {
-  myCounter = setInterval(function(){
-    count++;
-    hungry.innerText = "Hungry: " + count;
-  }, 1000);
-};
+// function to increment the age
+function ageCount() {
+    ageCounter = setInterval(function () {
+        // increment the age of pet
+        agePet++;
+        age.innerText = "Age: " + agePet;
+        if (hunger == 10 || bore == 10 || sleep == 10)
+        // stop the timer if any of the above condition satsfies
+            clearInterval(ageCounter);
+    // time interval is set as 1 minute
+    }, 60000); 
+}
 
-function resetClick() {
-  clearInterval(myCounter);
-};
+// function to increment the hunger
+function hungerCount() {
+  hungerCounter = setInterval(function () {
+      hunger++;
+      hungry.innerText = "Hunger: " + hunger;
+      if (hunger == 10)
+          // if the value of bore reaches the value 10 first then display the message 
+          petAlive.innerText = "Your pet died of hunger. ";
+          if (hunger == 10 || bore == 10 || sleep == 10)
+          // stop the timer if any of the above condition satsfies
+          clearInterval(hungerCounter);
+  // time interval is set as .5 seconds
+  }, 500);
 
-function sleepClick() {
-  myCounter = setInterval(function(){
-    count++;
-    Rest.innerText = "rest: " + count;
-  }, 1000);
-};
+}
 
-function playClick() {
-  myCounter = setInterval(function(){
-    count++;
-    Bone.innerText = "bone: " + count;
-  }, 1000);
-};
+
+
+// function feedClick() {
+//   myCounter = setInterval(function(){
+//     count++;
+//     hungry.innerText = "Hungry: " + count;
+//   }, 1000);
+// };
+
+// function resetClick() {
+//   clearInterval(myCounter);
+// };
+
+// function sleepClick() {
+//   myCounter = setInterval(function(){
+//     count++;
+//     Rest.innerText = "rest: " + count;
+//   }, 1000);
+// };
+
+// function playClick() {
+//   myCounter = setInterval(function(){
+//     count++;
+//     Bone.innerText = "bone: " + count;
+//   }, 1000);
+// };
 
 
 
