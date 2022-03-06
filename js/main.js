@@ -92,7 +92,7 @@ function boreCount() {
 //     // time interval is set as 2 seconds
 //     // }, 2000);
 //}
-
+// comment out 
 function startClick() {
   myCounter = setInterval(function(){
     count++;
